@@ -15,6 +15,7 @@ ENV LC_ALL ko_KR.UTF-8
 RUN mv /etc/localtime /etc/localimte_origin
 RUN ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
+#install JDK8
 RUN apt-get purge openjdk*
 
 RUN apt-get install -y software-properties-common
@@ -26,6 +27,7 @@ RUN apt-get install -y oracle-java8-installer
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
+# install or set nginx 
 RUN apt-get install -y nginx
 
 RUN rm -f /etc/nginx/sites-available/default
