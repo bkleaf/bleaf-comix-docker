@@ -41,7 +41,7 @@ VOLUME ["/var/comix","/var/novel","/var/www/","/var/script"]
 ADD script/start.sh /var/script/
 RUN chmod 755 /var/script/start.sh
 
-ADD ./www /var/www/
+#ADD ./www /var/www/
 
 EXPOSE 80
 EXPOSE 31257
