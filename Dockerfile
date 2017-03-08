@@ -48,4 +48,4 @@ EXPOSE 31257
 EXPOSE 31357
 EXPOSE 31000
 
-CMD ["sh","-c","/var/script/start.sh"]
+#CMD ["sh","-c","/var/script/start.sh"]
