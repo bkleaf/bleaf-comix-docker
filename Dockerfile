@@ -36,7 +36,7 @@ RUN rm -f /etc/nginx/sites-available/default
 ADD conf/default /etc/nginx/sites-available/
 ADD conf/aircomix.conf /etc/nginx/sites-enabled/
 
-VOLUME ["/var/comix","/var/novel","/var/www/","/var/script"]
+VOLUME ["/var/comix","/var/novel","/bleaf/src/comix","/var/script"]
 
 ADD script/start.sh /var/script/
 RUN chmod 755 /var/script/start.sh
